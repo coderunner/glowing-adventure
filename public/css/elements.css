@@ -1,0 +1,356 @@
+* { margin: 0; padding: 0; }
+
+html        { font: 14px/18px 'HelveticaNeue-Light', 'Helvetica Neue', Arial, Helvetica, sans-serif; color: black; }
+body        { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+/*#sizer      { width: 340px; margin: 0 auto; padding: 144px 200px 240px; }*/
+.wrapper        { width: 800px; padding: 18px 20px 0; margin: 40px; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -khtml-border-radius: 10px; box-shadow: 0 5px 12px rgba(0,0,0,.4); -webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4); -moz-box-shadow: 0 5px 12px rgba(0,0,0,.4); -khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4); }
+.wrapper > div   { border: 0; padding-bottom: 9px; }
+label       { display: block; cursor: pointer; line-height: 20px; padding-top: 9px; padding-bottom: 9px; text-shadow: 0 -1px 0 rgba(0,0,0,.2); }
+.radios     { padding-top: 18px; }
+.label_check input,
+.label_radio input  { margin-right: 5px; }
+
+.element h3 {
+    text-align: center;
+}
+
+.ui-accordion .ui-accordion-icons {
+    padding-left: 0;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.element ul {
+    list-style: none;
+}
+
+.ui-widget label {
+    font-family: 'Lato';
+    font-weight: normal;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #51C219;
+    background: #51C219 50% 50% repeat;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid #DC1C71;
+    background: #DC1C71 50% 50% repeat;
+}
+
+.ui-accordion:last-child > div {
+    text-align: center;
+}
+
+.has-js .label_check,
+.has-js .label_radio    { padding-left: 50px; min-height: 40px; white-space:nowrap; line-height: 45px; }
+.has-js .label_radio    { background: url(../img/boutons_check-15.png) no-repeat; display: inline; padding: 10px 10px 10px 50px; }
+.has-js .label_check    { background: url(../img/boutons_check-01.png) no-repeat; }
+.has-js label.c_on      { background: url(../img/boutons_check-08.png) no-repeat; }
+.has-js label.r_on      { background: url(../img/boutons_check-22.png) no-repeat; }
+.has-js .label_check input,
+.has-js .label_radio input  { position: absolute; left: -9999px; }
+
+.has-js .competence-0 .label_radio {
+    background: url(../img/boutons_check-15.png) no-repeat;
+}
+
+.has-js .competence-0 .label_check {
+    background: url(../img/boutons_check-01.png) no-repeat;
+}
+
+.has-js .competence-0 label.c_on {
+    background: url(../img/boutons_check-08.png) no-repeat;
+}
+
+.has-js .competence-0 label.r_on {
+    background: url(../img/boutons_check-22.png) no-repeat;
+}
+
+.competence-1 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #2E6BB5;
+    background: #2E6BB5 50% 50% repeat;
+}
+
+.competence-1 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid #EB8E22;
+    background: #EB8E22 50% 50% repeat;
+}
+
+.has-js .competence-1 .label_radio {
+    background: url(../img/boutons_check-18.png) no-repeat;
+}
+
+.has-js .competence-1 .label_check {
+    background: url(../img/boutons_check-04.png) no-repeat;
+}
+
+.has-js .competence-1 label.c_on {
+    background: url(../img/boutons_check-11.png) no-repeat;
+}
+
+.has-js .competence-1 label.r_on {
+    background: url(../img/boutons_check-25.png) no-repeat;
+}
+
+.competence-2 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: 1px solid #2E6BB5;
+    background: #A03071 50% 50% repeat;
+}
+
+.competence-2 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    border: 1px solid #EB8E22;
+    background: #E3DB6C 50% 50% repeat;
+    color: #A03071;
+}
+
+.has-js .competence-2 .label_radio {
+    background: url(../img/boutons_check-21.png) no-repeat;
+}
+
+.has-js .competence-2 .label_check {
+    background: url(../img/boutons_check-07.png) no-repeat;
+}
+
+.has-js .competence-2 label.c_on {
+    background: url(../img/boutons_check-14.png) no-repeat;
+}
+
+.has-js .competence-2 label.r_on {
+    background: url(../img/boutons_check-28.png) no-repeat;
+}
+
+.btn-progress {
+    background: url(../img/Competence_cotes-01.png) no-repeat;
+}
+
+.evt-0 .btn-progress {
+    background: url(../img/Competence_cotes-01.png) no-repeat;
+}
+
+.evt-1 .btn-progress {
+    background: url(../img/Competence_cotes-04.png) no-repeat;
+}
+
+.evt-2 .btn-progress {
+    background: url(../img/Competence_cotes-07.png) no-repeat;
+}
+
+.btn-progress-wrapper {
+    display: inline-block;
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+}
+
+.competence-label {
+    display: inline-block;
+    width: 50%;
+    white-space: initial;
+}
+
+.btn-progress-wrapper .btn-progress {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 40px;
+}
+
+.btn-progress-wrapper .progress-bar {
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 5px;
+    right: 9px;
+}
+
+.btn-progress-wrapper .ui-widget-header {
+    border: none;
+}
+
+.evt-0 .btn-progress-wrapper .ui-widget-header {
+    background: #DC1C71 50% 50% repeat-x;
+}
+
+.evt-1 .btn-progress-wrapper .ui-widget-header {
+    background: #EB8E22 50% 50% repeat-x;
+}
+
+.evt-2 .btn-progress-wrapper .ui-widget-header {
+    background: #E3DB6C 50% 50% repeat-x;
+}
+
+.evt-0 .btn-progress-wrapper .progress-bar {
+    background-color: #51C219;
+}
+
+.evt-1 .btn-progress-wrapper .progress-bar {
+    background-color: #2E6BB5;
+}
+
+.evt-2 .btn-progress-wrapper .progress-bar {
+    background-color: #A03071;
+}
+
+.logo-wrapper {
+/*    position: absolute;
+    bottom: -400px;
+    width: 250px;*/
+    margin-left: 15px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.logo-wrapper .melepi {
+    width: 100%;
+}
+
+.melepi img {
+    margin-left: 20px;
+    width: 80%;
+}
+
+.arrow {
+    display: block;
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    background: url(../img/btn_greenPrevious.png);
+}
+
+.arrow-right {
+    background: url(../img/btn_greenNext.png);
+}
+
+.competence-1 .arrow-left {
+    background: url(../img/btn_lightBluePrevious.png);
+}
+
+.competence-1 .arrow-right {
+    background: url(../img/btn_lightBlueNext.png);
+}
+
+.competence-2 .arrow-left {
+    background: url(../img/btn_purplePrevious.png);
+}
+
+.competence-2 .arrow-right {
+    background: url(../img/btn_purpleNext.png);
+}
+
+.main-progress {
+    margin-top: 1px;
+    margin-right: 15px;
+}
+
+.main-progress .ui-widget-header {
+    /*background-color: #295394;*/
+    background-color: #686868;
+}
+
+.main-progress.ui-corner-all, .ui-corner-br {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+.main-progress.ui-widget-content {
+    border: none;
+}
+.nav-sidebar > ul > li > a {
+    white-space: nowrap;
+}
+
+.icon-dev {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+.icon-dev.debutante {
+    background: url(../img/Btn_competence-01.png) no-repeat;
+}
+
+.icon-dev.avertie {
+    background: url(../img/Btn_competence-03.png) no-repeat;
+}
+
+.icon-dev.pr {
+    background: url(../img/Btn_competence-02.png) no-repeat;
+}
+
+.icon-dev.experte {
+    background: url(../img/Btn_competence-04.png) no-repeat;
+}
+
+.dev-wrapper {
+    text-align: center;
+    overflow: hidden;
+}
+
+.dev-wrapper > div {
+    text-align: center;
+    overflow: hidden;
+    margin: auto;
+    display: inline-block;
+}
+
+.dev-wrapper span {
+    display: block;
+    float: left;
+    line-height: 40px;
+}
+
+.dev-wrapper > div > div {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.competence-wrap > div {
+    clear: left;
+}
+
+.ct-elements {
+    float: left;
+}
+
+.ct-elements > div {
+    float: left;
+    clear: left;
+}
+
+.ct-title {
+    font-size: 24px;
+    min-width: 250px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.strategies {
+    display: none;
+    position: absolute;
+    background-color: #f2f2f2;
+    top: 400px;
+    right: 100px;
+    border: 1px solid #ddd;
+}
+
+.open-box {
+    cursor: pointer;
+}

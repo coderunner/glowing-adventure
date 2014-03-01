@@ -1,0 +1,32 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.MainController.index
+
+# Competence API
+GET     /competence                 controllers.CompetenceController.index
+GET     /competence/:id             controllers.CompetenceController.get(id: Long)
+
+# Nurse API
+GET     /nurse                      controllers.NurseController.index
+GET     /nurse/:id                  controllers.NurseController.get(id: Long)
+
+# Evaluation API
+GET     /evaluation/:id             controllers.EvaluationController.get(id: Long)
+
+# Repartition API
+GET     /repartition                controllers.RepartitionController.get(workUnit: Option[String] ?= None, workShift: Option[String] ?= None)
+GET     /repartition/element/:id    controllers.RepartitionController.getByElementId(id: Long, workUnit: Option[String] ?= None, workShift: Option[String] ?= None)
+GET     /repartition/competence/:id controllers.RepartitionController.getByCompetenceId(id: Long, workUnit: Option[String] ?= None, workShift: Option[String] ?= None)
+
+# UI API
+GET     /ui/workshift               controllers.UIController.getWorkShifts
+GET     /ui/workunit                controllers.UIController.getWorkUnits
+
+# Temporary API to create and load data from file to the in-memory database.
+GET     /bootstrap                  controllers.BootstrapController.bootstrap
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
